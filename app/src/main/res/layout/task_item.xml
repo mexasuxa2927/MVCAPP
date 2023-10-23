@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/item"
+    android:orientation="horizontal"
+    android:layout_height="60dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+
+        >
+        <RadioButton
+            android:id="@+id/taskcheked"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTask"
+            android:layout_marginLeft="10dp"
+            android:text="saddwasdawdasdawdaw"
+            app:layout_constraintBottom_toBottomOf="@+id/taskcheked"
+            app:layout_constraintStart_toEndOf="@+id/taskcheked"
+            app:layout_constraintTop_toTopOf="@+id/taskcheked"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asdawd"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@+id/titleTask"
+            app:layout_constraintTop_toBottomOf="@+id/titleTask" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/tasklistcolor"
+                android:layout_height="match_parent"></LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
